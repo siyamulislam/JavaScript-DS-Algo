@@ -1,6 +1,6 @@
 
 let nArray = [1, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59];
-const target = 173;
+const target = 17;
 const index = binarySearch(nArray, target)
 console.log('index: '+index)
 
@@ -21,5 +21,7 @@ function binarySearch(nArray, target) {
             end = mid - 1;
         }
     }
+    
+    console.log('item not Found');
     return -1;
 }
